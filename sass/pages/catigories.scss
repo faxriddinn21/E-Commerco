@@ -1,0 +1,62 @@
+$Main-onSurface: #414141;
+$Grayscale-Hard: #8F8F8F;
+$Main-BGPage: #FBF8EC;
+
+.next{
+    margin-top: 30px;
+    margin-left: 120px;
+    display: flex;
+    gap: 20px;
+    padding-top: 100px;
+
+    .glav-link{
+        color: $Main-onSurface;
+        font-family: Rubik;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; 
+    }
+    .katal-link{
+        color: $Grayscale-Hard;
+        font-family: Rubik;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; 
+    }
+}
+
+.color-section-1{
+    width: 100%;
+    height: 1400px;
+    background: $Main-BGPage;
+}
+
+.katalog{
+    margin-top: 3px;
+    margin-left: 120px;
+   
+    .text-katal{
+        font-size: 64px;
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+    }
+}
+
+.katalog-box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px;
+}
+
+
+@media only screen and(max-width: 800px){
+    .katalog-box{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+}

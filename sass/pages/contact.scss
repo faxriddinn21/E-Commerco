@@ -1,0 +1,125 @@
+$Main-Secondary : #70C05B;
+$White-color: #fff;
+$Main-onSurface: #414141;
+$main-Primary: #FF6633;
+$Main-BGPage: #FBF8EC;
+$Main-PrimaryMuted: #FCD5BA;
+$Main-SecondaryMuted: #E5FFDE;
+$Main-onSurface: #414141;
+$Grayscale-Hard: #8F8F8F;
+
+
+.section-contact{
+    width: 100%;
+    height: 1390px;
+    background: $Main-BGPage;
+}
+
+.kont{
+    margin-top: 30px;
+    padding-top: 100px;
+    padding-left: 116px;
+    display: flex;
+    gap: 20px;
+
+    .glav-6{
+        color: $Main-onSurface;
+        font-family: Rubik;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+    }
+    .contac{
+        color: $Grayscale-Hard;
+        font-family: Rubik;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+    }
+}
+
+.kontakt{
+    margin-left: 116px;
+    margin-top: 40px;
+    color: $Main-onSurface;
+    font-family: Rubik;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.number{
+    margin-top: 40px;
+    margin-left: 116px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 80px;
+
+    .bom{
+        display: flex;
+        gap: 8px;
+
+        .text-call{
+            color: $Main-onSurface;
+            font-family: Rubik;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+        }
+    }
+    .number-call{
+        margin-top: 16px;
+        margin-left: 37px;
+        color: $Main-onSurface;
+        font-family: Rubik;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; 
+        text-decoration-line: underline;
+    }
+}
+
+.magazin{
+    margin-top: 120px;
+    margin-left: 116px;
+
+    .nash{
+        color: $Main-onSurface;
+        font-family: Rubik;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; 
+    }
+}
+
+.box-call{
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+    .adress{
+        margin-top: 9.5px;
+        display: flex;
+        gap: 8px;
+
+        .text-adress{
+            margin-top: 8px;
+            color: $Main-onSurface;
+            font-family: Rubik;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; 
+        }
+    }
+
+}

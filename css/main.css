@@ -1,0 +1,459 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 80px;
+  background: #FFF;
+  box-shadow: 0px 13px 19px 1px rgba(34, 60, 80, 0.2);
+  z-index: 10;
+}
+
+.loaders {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: #000000;
+  z-index: 9999800001;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #FFF;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.navbar {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-ul {
+  display: none;
+  list-style: none;
+  font-size: 20px;
+  margin-top: 28px;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  padding: 40px 116px;
+  align-items: flex-start;
+  background: #FFF;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.15);
+  gap: 40px;
+}
+.nav-ul.block {
+  display: grid;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.menubar {
+  display: flex;
+  width: 140px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  border: none;
+  background: #70C05B;
+  color: #fff;
+}
+
+.link-category {
+  margin-left: 5px;
+  color: white;
+}
+
+.search {
+  width: 250px;
+  height: 40px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #70C05B;
+  background: #fff;
+}
+
+.lupa {
+  display: none;
+  position: relative;
+  left: 300px;
+  z-index: 1;
+}
+
+.multi-media {
+  display: flex;
+  gap: 40px;
+}
+
+.icon {
+  margin-left: 15px;
+}
+
+.avatar {
+  display: flex;
+  gap: 30px;
+}
+
+.box-hero {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: url(/images/pattern2.png);
+  background: 1;
+}
+.box-hero .hero-title {
+  font-size: 50px;
+}
+
+.bgcolor {
+  width: 100%;
+  height: 3650px;
+  background: #FBF8EC;
+}
+
+.text-aksiya {
+  padding-top: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.text-aksiya .produk-link {
+  font-size: 20px;
+  margin-right: 20px;
+}
+.text-aksiya .chevron {
+  position: relative;
+  top: 7px;
+  left: 10px;
+}
+
+.text-aksi {
+  font-size: 40px;
+}
+
+.like-btn {
+  margin-top: 10px;
+  margin-left: 240px;
+  border: none;
+}
+
+.box-card {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card {
+  width: 272px;
+  height: 400px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.card:hover {
+  box-shadow: 4px 8px 16px 0px rgba(255, 102, 51, 0.2);
+}
+.card .sum {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 20px;
+}
+.card .sum-2 {
+  margin-left: 130px;
+}
+.card .text-vlin {
+  margin-top: 15px;
+  margin-left: 10px;
+  color: #414141;
+  font-family: Rubik;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+.card .star {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.card .btn-cart {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 250px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid #70C05B;
+  color: #3e8e41;
+}
+.card .btn-cart:hover {
+  background: #FF6633;
+  color: #fff;
+}
+
+.box-pirlojne {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.box-pirlojne .pirlo-card {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 584px;
+  height: 200px;
+  border-radius: 4px;
+  background: #FCD5BA;
+  box-shadow: 0px 8px 16px 0px rgba(202, 147, 96, 0.5);
+}
+.box-pirlojne .pirlo-card-1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 584px;
+  height: 200px;
+  border-radius: 4px;
+  background: #E5FFDE;
+  box-shadow: 0px 8px 16px 0px rgba(202, 147, 96, 0.5);
+}
+
+.box-button {
+  margin-top: 50px;
+  margin-left: 80px;
+  display: flex;
+  gap: 30px;
+}
+.box-button .map-btn {
+  width: 97px;
+  height: 32px;
+  padding: 8px;
+  gap: 8px;
+  border-radius: 4px;
+  border: 1px solid #70C05B;
+}
+.box-button .map-btn:hover {
+  background: #70C05B;
+  color: #fff;
+  transition: all 0.5s;
+}
+
+.massages-box {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.massages-box .massages-card {
+  width: 376px;
+  height: 458px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.massages-box .massages-card .date {
+  margin-top: 5px;
+  margin-left: 20px;
+  color: #8F8F8F;
+  font-family: Rubik;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.massages-box .massages-card .texto-tit {
+  margin-top: 10px;
+  margin-left: 20px;
+  color: #414141;
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.massages-box .massages-card .text-1 {
+  margin-top: 10px;
+  margin-left: 20px;
+  color: #414141;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.massages-box .massages-card .btn-mass {
+  margin-top: 30px;
+  margin-left: 20px;
+  width: 150px;
+  height: 40px;
+  border-radius: 4px;
+  border: none;
+  color: #3e8e41;
+  background: #E5FFDE;
+}
+.massages-box .massages-card .btn-mass:hover {
+  background: #3e8e41;
+  color: #fff;
+}
+
+.color-footer {
+  width: 100%;
+  height: 100px;
+  background: #d59a87;
+}
+
+.box-footer {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.box-footer .ul-footer {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+@media only screen and (max-width: 800px) {
+  .navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .multi-media {
+    display: none;
+  }
+  .box-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 80px;
+  }
+  .card {
+    margin-top: 30px;
+  }
+  .text-aksiya {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .box-pirlojne {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 100px;
+    grid-gap: 50px;
+  }
+  .box-button {
+    margin-left: 150px;
+  }
+  .map {
+    width: 725px;
+    height: 200px;
+  }
+  .massages-box {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .massages-card {
+    margin-top: 50px;
+  }
+  .box-footer {
+    margin-top: 100rem;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .search {
+    display: none;
+  }
+  .box-hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .box-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-right: 90px;
+  }
+  .lupa {
+    display: none;
+  }
+  .box-pirlojne {
+    display: none;
+  }
+  .box-button {
+    margin-left: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .map {
+    width: 300px;
+  }
+  .massages-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .box-footer {
+    text-align: center;
+    margin-top: 4400px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+  .ul-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .li-footer {
+    display: none;
+  }
+  .color-footer {
+    height: 100%;
+  }
+  .logo-footer {
+    margin-left: 130px;
+  }
+}/*# sourceMappingURL=main.css.map */

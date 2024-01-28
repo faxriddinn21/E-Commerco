@@ -1,0 +1,50 @@
+.next {
+  margin-top: 30px;
+  margin-left: 120px;
+  display: flex;
+  gap: 20px;
+  padding-top: 100px;
+}
+.next .glav-link {
+  color: #414141;
+  font-family: Rubik;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.next .katal-link {
+  color: #8F8F8F;
+  font-family: Rubik;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.color-section-1 {
+  width: 100%;
+  height: 1426px;
+  background: #FBF8EC;
+}
+
+.katalog {
+  margin-top: 3px;
+  margin-left: 120px;
+}
+.katalog .text-katal {
+  font-size: 64px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.katalog-box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 30px;
+}
+
+@med;/*# sourceMappingURL=catigories.css.map */

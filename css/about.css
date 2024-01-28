@@ -1,0 +1,70 @@
+.section-kompany {
+  width: 100%;
+  height: 1219px;
+  background: #FBF8EC;
+}
+
+.o-kom {
+  margin-top: 30px;
+  padding-top: 100px;
+  padding-left: 116px;
+  display: flex;
+  gap: 20px;
+}
+.o-kom .glav-5 {
+  color: #414141;
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.o-kom .com {
+  color: #8F8F8F;
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.content {
+  position: relative;
+  top: 200px;
+}
+.content .title-company {
+  color: #414141;
+  font-family: Rubik;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.content .text-company {
+  color: #F63;
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.tepa {
+  position: relative;
+  bottom: 100px;
+  z-index: 1;
+}
+
+.dizayn {
+  position: relative;
+  left: 680px;
+}
+
+.o-kampaniya-ofis {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.o-kampaniya-ofis .more {
+  display: flex;
+}/*# sourceMappingURL=about.css.map */
